@@ -75,6 +75,8 @@ li:hover {
     display: flex;
     gap: 24px;
     justify-content: center;
+    text-align: center;
+    padding: 12px, 24px, 12px, 24px;
 
 }
 
@@ -88,6 +90,7 @@ li:hover {
     width: 134px;
     height: 24px;
     font-size: 16px;
+    margin: auto;
 }
 
 .phone-number > p {
@@ -105,19 +108,19 @@ li:hover {
 
 .iniciar-sesion {
 
+    justify-content: center;
+    display: flex;
+    text-align: center;
     width: 130px;
     height: 40px;
     border-radius: 4px;
-    flex-direction: row;
-    background-color: #515051;
+    background-color:#2B2A2B;
     color: white;
-    border-radius: 4px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 600;
-    gap: 8px;
-    font-size: 14px;
-    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
     
     }
 
@@ -139,24 +142,53 @@ gap: 8px;
 
 .main-section-box-text {
 
-height: 232px;
 width: 588px;
+height: 232px;
 padding: 48px 40px 48px 40px;
 gap: 16px;
 line-height: 44px;
 }
 
-.main-section-box-text {
+.main-section-box-text > h3 {
+
+width: 588px;
+height: 24px;
+color: #2a5b45;
+line-height: 24px;
+font-size: 18px;
 
 }
 
+.main-section-box-text > h1 {
+
+    width: 588px;
+    height: 88px;
+    font-size: 40px;
+    line-height: 44px;
+    
+    }
+
 .main-section-box-text > p {
 
-color: #2a5b45;
+width: 588px;
+height: 32px;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+
+}
+
+.heroButtons {
+
+width: 321px;
+height: 40px;
+gap: 16px;
+
 
 }
 
 .descubrir-origenes {
+width: 168px;
 height: 40px;
 background-color: black;
 color: white;
@@ -166,6 +198,7 @@ font-weight: 600;
 }
 
 .comprar-cafe {
+width: 137px;
 height: 40px;
 background-color: #2a5b45;
 color: white;
