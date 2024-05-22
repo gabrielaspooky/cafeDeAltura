@@ -199,12 +199,14 @@ font-weight: 600;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    row-gap: 40px;
+    gap: 24px;
     align-items: center;
     align-content: center;
     height: 380px;
     width: 1280px;
-    background-image: url(coffee-background.38aa7680.jpg);
+    background-image: url(/assets/coffee-background.38aa7680.jpg);
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -242,6 +244,15 @@ font-weight: 600;
     justify-content: space-around;
     align-items: center;
 
+}
+
+#novedades {
+    width: 1280px;
+    height: 603px;
+    padding: 40px;
+    gap: 40px;
+    display: flex;
+    align-content: center;
 }
 
 .third-section {
