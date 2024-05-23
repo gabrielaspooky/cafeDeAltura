@@ -54,18 +54,27 @@ li {
 
 display: flex;
 list-style: none;
-display: inline;
 justify-content: space-between;
+align-items: center;
 line-height: 16px;
 cursor: pointer;
 color: white;
 font-weight: 600;
 font-size: 14px;
+cursor: pointer;
+height: 32px;
+padding: 8px;
+border-radius: 10px;
+white-space: nowrap;
+
 
 }
 
 li:hover {
-    background-color:#F7F5F31A;
+
+background-color: rgb(54, 50, 50);
+
+
     }
 
 .phone-buttom-nav {
@@ -195,6 +204,7 @@ color: white;
 border-radius: 4px;
 font-size: 16px;
 font-weight: 600;
+cursor: pointer;
 }
 
 .comprar-cafe {
@@ -205,19 +215,86 @@ color: white;
 border-radius: 4px;
 font-size: 16px;
 font-weight: 600;
+cursor: pointer;
 
 }
 
-.granos {
+.hero-image {
 
-    display: block;
+    display: flex;
     align-content: flex-end;
     height: 390px;
     width: 588px;
     vertical-align: middle;
-    padding-top: 3cm;
+    padding-top: 45px;
 }
 
+
+.second-section {
+    display: flex;
+    height: 380px;
+    width: 1280px;
+    background-image: url(/assets/coffee-background.38aa7680.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.second-section > h2 {
+
+    color: white;
+}
+
+.benefits-cards {
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px;
+    align-items: center;
+}
+
+#box-1 {
+
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px 24px 24px 24px;
+    height: 232px;
+    width: 316px;
+    font-size: 14px;
+    align-items: center;
+    align-content: center;
+    padding: 24px;
+
+}
+
+
+#box-2 {
+
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px 24px 24px 24px;
+    height: 232px;
+    width: 316px;
+    font-size: 14px;
+    align-items: center;
+    align-content: center;
+
+}
+
+#box-3 {
+
+    background-color: white;
+    border-radius: 8px;
+   padding: 24px 24px 24px 24px;
+    height: 232px;
+    width: 316px;
+    font-size: 14px;
+    align-items: center;
+    align-content: center;
+
+}
 
 .preguntas {
     display: flex;
@@ -278,64 +355,83 @@ font-weight: 600;
     cursor: pointer;
 }
 
-.second-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 24px;
-    align-items: center;
-    align-content: center;
-    height: 380px;
-    width: 1280px;
-    background-image: url(/assets/coffee-background.38aa7680.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-
-#box-1 {
-
-    background-color: white;
-   padding: 24px 24px 24px 24px;
-    height: 232px;
-    width: 316px;
-    font-size: 14px;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-#box-2 {
-
-    background-color: white;
-    padding: 24px 24px 24px 24px;
-    height: 232px;
-    width: 316px;
-    font-size: 14px;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-#box-3 {
-
-    background-color: white;
-   padding: 24px 24px 24px 24px;
-    height: 232px;
-    width: 316px;
-    font-size: 14px;
-    justify-content: space-around;
-    align-items: center;
-
-}
 
 #novedades {
     width: 1280px;
     height: 603px;
     padding: 40px;
     gap: 40px;
+
+}
+
+#novedades > h3 {
+color: #2a5b45;
+text-align: center;
+}
+
+.section-novedades-wrapper {
     display: flex;
-    align-content: center;
+    width: 1200px;
+    height: 391.39px;
+    border: #2a5b45 solid 2px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.costaRicaCoffee {
+    width: 282px;
+    height: 391.39px;
+    align-items: center;
+    text-align: center;
+}
+
+.costaRicaCoffee > img {
+    padding: 24px;
+}
+
+.colombiaCoffee {
+    width: 282px;
+    height: 391.39px;
+    align-items: center;
+    text-align: center;
+}
+
+.colombiaCoffee > img {
+    padding: 24px;
+}
+
+.laosCoffee {
+    width: 282px;
+    height: 391.39px;
+    align-items: center;
+    text-align: center;
+}
+
+.laosCoffee > img {
+    padding: 24px;
+}
+
+.etiopiaCoffee {
+    width: 282px;
+    height: 391.39px;
+    align-items: center;
+    text-align: center;
+}
+
+.etiopiaCoffee > img {
+    padding: 24px;
+}
+
+
+
+.arrow-icon {
+    width: 18px;
+    height: 8px;
+    top: 8px;
+    left: 3px;
+    gap: 0px;
+    border: 2px 0px 0px 0px;
 }
 
 .third-section {
@@ -352,8 +448,6 @@ background-color: #F7F5F3;
 }
 
 .img-cafeteria {
-        display: inline-block;
-        margin-left: 65%;
         min-height: auto;
         min-width: auto;
         max-width: 100%;
@@ -472,7 +566,6 @@ opacity: 0px;
 }
 
 footer {
-width: 100%;
 background-color: #2b2a2b;
 color: white;
 font-size: 14px;
@@ -483,4 +576,5 @@ text-align: center;
 .low-footer {
 
 height: 40px;
+align-content: center;
 }
