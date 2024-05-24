@@ -307,21 +307,88 @@ cursor: pointer;
     height: 621px;
 }
 
+.preguntas > h2 {
+
+    width: 228px;
+height: 28px;
+white-space: nowrap;
+font-size: 24px;
+font-weight: 500;
+line-height: 28px;
+padding: 35px;
+
+}
+
+.preguntas > a {
+display: flex;
+align-items: center;
+width: 178px;
+height: 24px;
+gap: 16px;
+white-space: nowrap;
+color: white;
+text-decoration: underline white 1px;
+font-size: 14px;
+
+}
+
+.FAQs-Wrapper {
+
+    width: 668px;
+height: 425px;
+gap: 16px;
+
+}
+
 #pregunta-1 {
 
-    height: 72px;
+    height: 24px;
     width: 668px;
-    background-color: white;
     padding: 24px 24px 24px 24px;
     color: black;
-    display: block;
-}
-
-#pregunta-1 > p {
-
+    border-radius: 10px;
+    background-color: #F7F5F3;
     display: flex;
     cursor: pointer;
+
 }
+
+#pregunta-1 > h3 {
+
+
+    cursor: pointer;
+    width: 188px;
+height: 24px;
+font-size: 18px;
+line-height: 24px;
+font-weight: 600;
+display: flex;
+flex-direction: row;
+white-space: nowrap;
+
+}
+
+.respuesta-1 > p {
+
+    color: transparent;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+height: 32px;
+width: 600px;
+  
+}
+
+.respuesta-1 > p:hover {
+
+    text-align: left;
+    width: 668px;
+height: 136px;
+gap: 16px;
+color: #2B2A2B;
+    
+}
+
 
 #pregunta-2 {
 
@@ -331,6 +398,9 @@ cursor: pointer;
     padding: 24px 24px 24px 24px;
     color: black;
     display: block;
+    border-radius: 10px;
+    
+    
 }
 
 #pregunta-2 > p {
@@ -347,6 +417,7 @@ cursor: pointer;
     padding: 24px 24px 24px 24px;
     color: black;
     display: block;
+    border-radius: 10px;
 }
 
 #pregunta-3 > p {
@@ -357,11 +428,10 @@ cursor: pointer;
 
 
 #novedades {
-    width: 1280px;
+    width: 100%;
     height: 550px;
     padding: 40px;
     gap: 40px;
-    border: #2a5 solid 5px;
 
 }
 
