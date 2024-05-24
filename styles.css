@@ -230,43 +230,47 @@ cursor: pointer;
 }
 
 
-.second-section {
+.secondSection {
     display: flex;
     height: 380px;
     width: 1280px;
-    background-image: url(/assets/coffee-background.38aa7680.jpg);
+    background-image: url("/assets/coffee-background.38aa7680.jpg");
     background-size: cover;
     background-position: center;
-    
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 
 }
 
-.second-section > h2 {
+.titleSection {
 
         color: white;
-        white-space: nowrap;
-        border: #2a5b45 solid 2px;
         width: 350px;
         height: 28px;
-        line height: 28px;
+        line-height: 28px;
         font-size: 24px;
         font-weight: 500;
-        display: flex;
-    align-content: center;
+    
         
-
     }
 
 
 .benefits-cards {
 
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     display: flex;
-    justify-content: space-between;
     gap: 16px;
-    padding: 24px;
-    align-items: center;
-    border: #2a5b45 solid 2px;
+    border: 2px black solid;
+    align-content: center;
+    width: 996px;
+height: 232px;
+gap: 24px;
+opacity: 0px;
 
 }
 
@@ -275,11 +279,10 @@ cursor: pointer;
 
     background-color: white;
     border-radius: 8px;
-    padding: 24px 24px 24px 24px;
+    padding: 24px;
     height: 232px;
     width: 316px;
     font-size: 14px;
-    align-items: center;
     align-content: center;
     padding: 24px;
 
@@ -290,7 +293,7 @@ cursor: pointer;
 
     background-color: white;
     border-radius: 8px;
-    padding: 24px 24px 24px 24px;
+    padding: 24px;
     height: 232px;
     width: 316px;
     font-size: 14px;
@@ -298,12 +301,13 @@ cursor: pointer;
     align-content: center;
 
 }
+
 
 #box-3 {
 
     background-color: white;
     border-radius: 8px;
-   padding: 24px 24px 24px 24px;
+   padding: 24px;
     height: 232px;
     width: 316px;
     font-size: 14px;
@@ -311,6 +315,7 @@ cursor: pointer;
     align-content: center;
 
 }
+
 
 .preguntas {
     display: flex;
@@ -470,6 +475,8 @@ text-align: center;
     height: 391.39px;
     align-items: center;
     text-align: center;
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
 }
 
 .costaRicaCoffee > img {
@@ -493,6 +500,8 @@ text-align: center;
     height: 391.39px;
     align-items: center;
     text-align: center;
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
 }
 
 .colombiaCoffee > img {
@@ -518,6 +527,8 @@ text-align: center;
     height: 391.39px;
     align-items: center;
     text-align: center;
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
 }
 
 .laosCoffee > img {
@@ -542,6 +553,8 @@ text-align: center;
     height: 391.39px;
     align-items: center;
     text-align: center;
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
 }
 
 .etiopiaCoffee > img {
@@ -590,22 +603,41 @@ gap: 16px;
 .third-section {
 
 width: 1280px;
-height: 552px;
+height: 480px;
 font-size: 14px;
-display: inline-block;
-justify-content: space-evenly;
-padding: 48px 40px 48px 40px;
 background-color: #F7F5F3;
 
 
 }
 
-.img-cafeteria {
-        min-height: auto;
-        min-width: auto;
-        max-width: 100%;
-        justify-content: space-around;
+.coffee-shop {
+
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+height: 390px;
+top: 44.61px;
+left: 40px;
+gap: 0px;
+justify: space-between;
+
+
 }
+
+.coffee-shop > {
+
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+height: 390px;
+top: 44.61px;
+left: 40px;
+gap: 0px;
+justify: space-between;
+
+
+}
+
 
 .contacto {
     display: flex;
@@ -616,25 +648,43 @@ background-color: #F7F5F3;
 
 }
 
+
 .form-box {
 display: block;
 height: 200px;
 weight: 600px;
+gap: 24px;
+opacity: 0px;
 padding: 40px 40px 40px 40px;
 width: 588px;
 height: 552px;
 background-color: white;
 
+
 }
 
 #contact {
 
-    display: flex;
     height: 400px;
     weight: 600px;
     padding: 40px 32px 40px 32px;
     background-color: #E3DED7;
+    width: 588px;
+    height: 320px;
+    gap: 32px;
+
 }
+
+#contact > h3 {
+
+white-space: nowrap;
+color: #111827;
+}
+
+#contact > p {
+
+    color: #6B7280;
+    }
 
 #contact, form {
     flex: 1; 
@@ -654,9 +704,10 @@ font-weight: 600;
 textarea {
 height: 178px;
 width: 520px;
-font-family: Arial, Helvetica, sans-serif;
 margin: 24px 0 0 0;
 padding: 8px 12px 8px 12px;
+border-radius: 6px;
+border-color: #D1D5DB;
 }
 
 .final-section {
