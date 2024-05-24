@@ -237,13 +237,26 @@ cursor: pointer;
     background-image: url(/assets/coffee-background.38aa7680.jpg);
     background-size: cover;
     background-position: center;
+    
 
 }
 
 .second-section > h2 {
 
-    color: white;
-}
+        color: white;
+        white-space: nowrap;
+        border: #2a5b45 solid 2px;
+        width: 350px;
+        height: 28px;
+        line height: 28px;
+        font-size: 24px;
+        font-weight: 500;
+        display: flex;
+    align-content: center;
+        
+
+    }
+
 
 .benefits-cards {
 
@@ -253,7 +266,10 @@ cursor: pointer;
     gap: 16px;
     padding: 24px;
     align-items: center;
+    border: #2a5b45 solid 2px;
+
 }
+
 
 #box-1 {
 
