@@ -358,9 +358,10 @@ cursor: pointer;
 
 #novedades {
     width: 1280px;
-    height: 603px;
+    height: 550px;
     padding: 40px;
     gap: 40px;
+    border: #2a5 solid 5px;
 
 }
 
@@ -373,7 +374,6 @@ text-align: center;
     display: flex;
     width: 1200px;
     height: 391.39px;
-    border: #2a5b45 solid 2px;
     align-items: center;
     justify-content: space-between;
 
@@ -390,6 +390,18 @@ text-align: center;
     padding: 24px;
 }
 
+.costaRicaCoffee > a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #2A5B45B2;
+    width: 60px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 8px;
+    gap: 8px;
+}
 .colombiaCoffee {
     width: 282px;
     height: 391.39px;
@@ -401,6 +413,20 @@ text-align: center;
     padding: 24px;
 }
 
+.colombiaCoffee > a {
+    cursor: pointer;
+    background-color: #2A5B45B2;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    width: 60px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 8px;
+    gap: 8px;
+}
+
+
 .laosCoffee {
     width: 282px;
     height: 391.39px;
@@ -410,6 +436,19 @@ text-align: center;
 
 .laosCoffee > img {
     padding: 24px;
+}
+
+.laosCoffee > a {
+    cursor: pointer;
+    background-color: #2A5B45B2;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    width: 60px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 8px;
+    gap: 8px;
 }
 
 .etiopiaCoffee {
@@ -423,15 +462,43 @@ text-align: center;
     padding: 24px;
 }
 
+.etiopiaCoffee > a {
+    cursor: pointer;
+    background-color: #2A5B45B2;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    width: 60px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 8px;
+    gap: 8px;
+}
+
+#novedades > a {
+    display: flex;
+   justify-content: center;
+color: #2B2A2B;
+white-space: nowrap;
+font-size: 14px;
+font-weight: 600;
+align-items: center;
+gap: 16px;
+
+}
 
 
 .arrow-icon {
+    display: inline;
+    justify-content: center;
     width: 18px;
     height: 8px;
     top: 8px;
     left: 3px;
     gap: 0px;
     border: 2px 0px 0px 0px;
+    align-items: center;
+    align-content: center;
 }
 
 .third-section {
