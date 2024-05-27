@@ -5,20 +5,15 @@
     font-family: 'Outfit';
     margin: 0%;
     line-height: 16px;
+    box-sizing: border-box;
+    padding: 0;
 }
-
-body {
-    font-family: 'Outfit';
-    font-size: 22px;
-
-}
-
 
 nav {
     top: 0;
     height: 64px;
     width: 100%;
-    background-color: black;
+    background-color: #2B2A2B;
     margin: 0;
     padding: 0;
     display: flex;
@@ -35,7 +30,6 @@ height: 36px;
 font-weight: 400;
 line-height: 35.19px;
 font-size: 23.46px;
-opacity: 86%;
 color: white;
 padding: 12px;
 gap: 7.33px;
@@ -133,10 +127,11 @@ background-color: rgb(54, 50, 50);
     
     }
 
-.carrito {
+.shoppingBagIcon {
     display: flex;
     height: 24px;
     width: 24px;
+    cursor: pointer;
 }
 
 .main-section {
@@ -317,6 +312,113 @@ opacity: 0px;
     align-content: center;
 
 }
+
+#FAQ{
+    min-height: 621px;
+    background-color: #2A5B45;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+#FAQ h2{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#FAQWrapper{
+    height: 425px;
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.FAQWrapperElements{
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 10px;
+    background-color: #FFFFFF; 
+    min-height: 72px; 
+    transition: all 1s;
+}
+
+.FAQWrapperTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+    min-height: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.FAQWrapperTitle img{
+    height: 20px;
+    width: 20px;
+}
+
+.FAQWrapperElements hr{
+    width: 620px;
+    border: 1px solid #E3DED7;
+    display: none; 
+    transition: all 1s;
+}
+
+.FAQWrapperElements p{
+    width: 620px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: none;
+    transition: all 1s;
+}
+
+.FAQWrapperElements:hover{
+    padding: 24px;
+}
+
+.FAQWrapperElements:hover hr{
+    display: block;
+}
+
+.FAQWrapperElements:hover p{
+    display: block;
+}
+
+.FAQWrapperElements:hover .FAQWrapperTitle img{
+    transform: rotate(180deg);
+}
+
+ #FQALinkIcon{
+    min-width: 178px;
+    min-height: 24px;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+ }
+
+ #FQALinkIcon a{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #FFFFFF;
+ }
+
+ #FQALinkIcon img{
+    height: 24px;
+    width: 24px;
+ }
 
 
 .preguntas {
