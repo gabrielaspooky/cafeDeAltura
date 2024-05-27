@@ -591,19 +591,19 @@ gap: 16px;
 }
 
 .faqsWrapperElements hr{
+    transition: all 1s;
     width: 620px;
     border: 1px solid #E3DED7;
     display: none; 
-    transition: all 1s;
 }
 
 .faqsWrapperElements p{
+    transition: all 1s;
     width: 620px;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     display: none;
-    transition: all 1s;
 }
 
 .faqsWrapperElements:hover{
@@ -761,20 +761,22 @@ border-radius: 6px;
 border-color: #D1D5DB;
 }
 
-#checkbox {
-
-    width: 16px;
-height: 20px;
-
-}
-
-input {
+#name,
+#email,
+#telefono {
 
 width: 470px;
 height: 34px;
 padding: 9px 13px 9px 13px;
 border-radius: 6px;
 border: 1px #D1D5DB solid;
+outline: none;
+
+
+}
+
+input:focus {
+    outline: 2px solid #3F8F6B;
 
 }
 
@@ -901,5 +903,6 @@ border: 1px #D1D5DB solid;
     height: 40px;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
 
     }
