@@ -743,13 +743,14 @@ color: #111827;
     width: 90px;
     padding: 12px;
 height: 40px;
-background-color: #2a5b45;
+background-color:#2A5B45;
 color: white;
 border-radius: 4px;
 font-size: 16px;
 font-weight: 600;
 align-items: center;
 cursor: pointer;
+border: none;
 }
 
 #area-texto {
@@ -773,6 +774,11 @@ border: 1px #D1D5DB solid;
 outline: none;
 
 
+}
+
+submit {
+
+    background-color: #6B7280;
 }
 
 input:focus {
