@@ -546,7 +546,7 @@ gap: 16px;
 }
 
 
-#FAQ{
+#coffeeFaqs{
     min-height: 621px;
     background-color: #2A5B45;
     display: flex;
@@ -556,14 +556,14 @@ gap: 16px;
     gap: 24px;
 }
 
-#FAQ h2{
+#coffeeFaqs > h2{
     color: #FFFFFF;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
 }
 
-#FAQWrapper{
+#faqsWrapper{
     height: 425px;
     width: 668px;
     display: flex;
@@ -573,7 +573,7 @@ gap: 16px;
     cursor: pointer;
 }
 
-.FAQWrapperElements{
+.faqsWrapperElements{
     width: 668px;
     display: flex;
     flex-direction: column;
@@ -586,7 +586,7 @@ gap: 16px;
     transition: all 1s;
 }
 
-.FAQWrapperTitle{
+.faqsWrapperTitle{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -597,19 +597,19 @@ gap: 16px;
     line-height: 24px;
 }
 
-.FAQWrapperTitle img{
+.faqsWrapperTitle img{
     height: 20px;
     width: 20px;
 }
 
-.FAQWrapperElements hr{
+.faqsWrapperElements hr{
     width: 620px;
     border: 1px solid #E3DED7;
     display: none; 
     transition: all 1s;
 }
 
-.FAQWrapperElements p{
+.faqsWrapperElements p{
     width: 620px;
     font-weight: 400;
     font-size: 12px;
@@ -618,40 +618,45 @@ gap: 16px;
     transition: all 1s;
 }
 
-.FAQWrapperElements:hover{
+.faqsWrapperElements:hover{
     padding: 24px;
 }
 
-.FAQWrapperElements:hover hr{
+.faqsWrapperElements:hover hr{
     display: block;
 }
 
-.FAQWrapperElements:hover p{
+.faqsWrapperElements:hover p{
     display: block;
 }
 
-.FAQWrapperElements:hover .FAQWrapperTitle img{
+.faqsWrapperElements:hover .faqsWrapperTitle img{
     transform: rotate(180deg);
 }
 
- #FQALinkIcon{
+ #moreFaqs{
     min-width: 178px;
     min-height: 24px;
     gap: 16px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
  }
 
- #FQALinkIcon a{
+ #moreFaqs a{
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
     color: #FFFFFF;
+    display: flex;
+    align-items: center;
  }
 
- #FQALinkIcon img{
+ #moreFaqs img{
     height: 24px;
     width: 24px;
+    display: flex;
+    align-items: center;
  }
 
 
