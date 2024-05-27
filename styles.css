@@ -93,7 +93,6 @@ background-color: rgb(54, 50, 50);
 a:visited {
 color: white;
 text-decoration: none;
-text-decoration-line: none;
 }
 
 .phoneNumberIcon {
@@ -298,7 +297,7 @@ white-space: nowrap;
     }
 
 
-.benefits-cards {
+.benefitsCards {
 
     flex-direction: row;
     justify-content: space-between;
