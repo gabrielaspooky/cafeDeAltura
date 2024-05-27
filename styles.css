@@ -790,6 +790,8 @@ border: 1px #D1D5DB solid;
     gap: 10px;
     padding: 12px 40px 40px 60px;
     list-style-type: none;
+    justify-content: space-between;
+    text-align: left;
     }
     
     .helpText {
