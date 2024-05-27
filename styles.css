@@ -399,7 +399,10 @@ text-align: center;
     cursor: pointer;
 }
 
-.costaRicaCoffee > a:hover {
+.costaRicaCoffee > a:hover,
+.colombiaCoffee > a:hover,
+.etiopiaCoffee > a:hover,
+.laosCoffee > a:hover {
 
 background-color: #2A5B45;
 }
@@ -437,11 +440,6 @@ background-color: #2A5B45;
     cursor: pointer;
 }
 
-.colombiaCoffee > a:hover {
-
-background-color: #2A5B45;
-}
-
 
 .laosCoffee {
     width: 282px;
@@ -476,11 +474,6 @@ background-color: #2A5B45;
     cursor: pointer;
 }
 
-.laosCoffee > a:hover {
-
-background-color: #2A5B45;
-}
-
 .etiopiaCoffee {
     width: 282px;
     height: 391.39px;
@@ -512,11 +505,6 @@ background-color: #2A5B45;
     border: 1px solid #E3DED7;
     background-color: #E3DED7;
     cursor: pointer;
-}
-
-.etiopiaCoffee > a:hover {
-
-background-color: #2A5B45;
 }
 
 #novedades > a {
