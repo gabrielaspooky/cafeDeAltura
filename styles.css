@@ -13,20 +13,6 @@ body {
     width: 100%;
 }
 
-body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: rgb(46, 45, 44);        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #2A5B45;    /* color of the scroll thumb */
-    border-radius: 10px;       /* roundness of the scroll thumb */
-    border: 2px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
-  }
-
 /* Contenido de navbar  */
 
 nav {
@@ -303,17 +289,16 @@ white-space: nowrap;
     justify-content: space-between;
     align-items: center;
     display: flex;
-    gap: 16px;
     align-content: center;
+    text-align: center;
     width: 996px;
 height: 220px;
-gap: 24px;
-opacity: 0px;
+padding: 24px;
+gap: 16px;
 
 }
 
-
-#box-1 {
+.benefitBoxes {
 
     background-color: white;
     border-radius: 8px;
@@ -321,38 +306,245 @@ opacity: 0px;
     height: 232px;
     width: 316px;
     font-size: 14px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     align-content: center;
+    text-align: center;
+
+
+}
+
+.benefitBoxes > p  {
+
+width: 268px;
+height: 32px;
+line-height: 16px;
+}
+
+.benefitBoxes > img {
+
+    width: 64px;
+    height: 70px;
+    padding: 12px 0px 0px 0px;
+    gap: 8px;
+    border-radius: 20px 0px 0px 0px;
+    opacity: 0px;
+    
+}
+
+.benefitBoxes > h3 {
+
+    white-space: nowrap;
+    width: 268px;
+height: 24px;
+line-height: 24px;
+
+}
+
+#novedades {
+    width: 100%;
+    height: 550px;
+    padding: 40px;
+    gap: 40px;
+
+}
+
+#novedades > h3 {
+color: #2a5b45;
+text-align: center;
+}
+
+.sectionNovedadesWrapper {
+    display: flex;
+    width: 1200px;
+    height: 391.39px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.costaRicaCoffee {
+    width: 282px;
+    height: 391.39px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
+}
+
+.costaRicaCoffee > img {
     padding: 24px;
+}
+
+.costaRicaCoffee > a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #2A5B45B2;
+    width: 60px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 8px;
+    gap: 8px;
+}
+
+.costaRicaCoffee:hover {
+
+    border: 1px solid #E3DED7;
+    background-color: #E3DED7;
+    cursor: pointer;
+}
+
+.costaRicaCoffee > a:hover {
+
+background-color: #2A5B45;
+}
+
+.colombiaCoffee {
+    width: 282px;
+    height: 391.39px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
+}
+
+.colombiaCoffee > img {
+    padding: 24px;
+}
+
+.colombiaCoffee > a {
+    cursor: pointer;
+    background-color: #2A5B45B2;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    width: 60px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 8px;
+    gap: 8px;
+}
+
+.colombiaCoffee:hover {
+
+    border: 1px solid #E3DED7;
+    background-color: #E3DED7;
+    cursor: pointer;
+}
+
+.colombiaCoffee > a:hover {
+
+background-color: #2A5B45;
+}
+
+
+.laosCoffee {
+    width: 282px;
+    height: 391.39px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
+}
+
+.laosCoffee > img {
+    padding: 24px;
+}
+
+.laosCoffee > a {
+    cursor: pointer;
+    background-color: #2A5B45B2;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    width: 60px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 8px;
+    gap: 8px;
+}
+
+.laosCoffee:hover {
+
+    border: 1px solid #E3DED7;
+    background-color: #E3DED7;
+    cursor: pointer;
+}
+
+.laosCoffee > a:hover {
+
+background-color: #2A5B45;
+}
+
+.etiopiaCoffee {
+    width: 282px;
+    height: 391.39px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
+}
+
+.etiopiaCoffee > img {
+    padding: 24px;
+}
+
+.etiopiaCoffee > a {
+    cursor: pointer;
+    background-color: #2A5B45B2;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    width: 60px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 8px;
+    gap: 8px;
+}
+
+.etiopiaCoffee:hover {
+
+    border: 1px solid #E3DED7;
+    background-color: #E3DED7;
+    cursor: pointer;
+}
+
+.etiopiaCoffee > a:hover {
+
+background-color: #2A5B45;
+}
+
+#novedades > a {
+    display: flex;
+   justify-content: center;
+color: #2B2A2B;
+white-space: nowrap;
+font-size: 14px;
+font-weight: 600;
+align-items: center;
+gap: 16px;
 
 }
 
 
-#box-2 {
-
-    background-color: white;
-    border-radius: 8px;
-    padding: 24px;
-    height: 232px;
-    width: 316px;
-    font-size: 14px;
+.arrow-icon {
+    display: inline;
+    justify-content: center;
+    width: 18px;
+    height: 8px;
+    top: 8px;
+    left: 3px;
+    gap: 0px;
+    border: 2px 0px 0px 0px;
     align-items: center;
     align-content: center;
-
 }
 
-
-#box-3 {
-
-    background-color: white;
-    border-radius: 8px;
-   padding: 24px;
-    height: 232px;
-    width: 316px;
-    font-size: 14px;
-    align-items: center;
-    align-content: center;
-
-}
 
 #FAQ{
     min-height: 621px;
@@ -463,158 +655,6 @@ opacity: 0px;
  }
 
 
-
-#novedades {
-    width: 100%;
-    height: 550px;
-    padding: 40px;
-    gap: 40px;
-
-}
-
-#novedades > h3 {
-color: #2a5b45;
-text-align: center;
-}
-
-.section-novedades-wrapper {
-    display: flex;
-    width: 1200px;
-    height: 391.39px;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.costaRicaCoffee {
-    width: 282px;
-    height: 391.39px;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #E3DED7;
-    border-radius: 8px;
-}
-
-.costaRicaCoffee > img {
-    padding: 24px;
-}
-
-.costaRicaCoffee > a {
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    background-color: #2A5B45B2;
-    width: 60px;
-    height: 32px;
-    border-radius: 4px;
-    padding: 8px;
-    gap: 8px;
-}
-.colombiaCoffee {
-    width: 282px;
-    height: 391.39px;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #E3DED7;
-    border-radius: 8px;
-}
-
-.colombiaCoffee > img {
-    padding: 24px;
-}
-
-.colombiaCoffee > a {
-    cursor: pointer;
-    background-color: #2A5B45B2;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    width: 60px;
-    height: 32px;
-    border-radius: 4px;
-    padding: 8px;
-    gap: 8px;
-}
-
-
-.laosCoffee {
-    width: 282px;
-    height: 391.39px;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #E3DED7;
-    border-radius: 8px;
-}
-
-.laosCoffee > img {
-    padding: 24px;
-}
-
-.laosCoffee > a {
-    cursor: pointer;
-    background-color: #2A5B45B2;
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-    width: 60px;
-    height: 32px;
-    border-radius: 4px;
-    padding: 8px;
-    gap: 8px;
-}
-
-.etiopiaCoffee {
-    width: 282px;
-    height: 391.39px;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #E3DED7;
-    border-radius: 8px;
-}
-
-.etiopiaCoffee > img {
-    padding: 24px;
-}
-
-.etiopiaCoffee > a {
-    cursor: pointer;
-    background-color: #2A5B45B2;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    width: 60px;
-    height: 32px;
-    border-radius: 4px;
-    padding: 8px;
-    gap: 8px;
-}
-
-#novedades > a {
-    display: flex;
-   justify-content: center;
-color: #2B2A2B;
-white-space: nowrap;
-font-size: 14px;
-font-weight: 600;
-align-items: center;
-gap: 16px;
-
-}
-
-
-.arrow-icon {
-    display: inline;
-    justify-content: center;
-    width: 18px;
-    height: 8px;
-    top: 8px;
-    left: 3px;
-    gap: 0px;
-    border: 2px 0px 0px 0px;
-    align-items: center;
-    align-content: center;
-}
 
 .third-section {
 
