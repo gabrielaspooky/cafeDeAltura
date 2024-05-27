@@ -9,6 +9,24 @@
     padding: 0;
 }
 
+body {
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(46, 45, 44);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #2A5B45;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 2px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+  }
+
 /* Contenido de navbar  */
 
 nav {
@@ -71,6 +89,12 @@ background-color: rgb(54, 50, 50);
 
 
     }
+
+a:visited {
+color: white;
+text-decoration: none;
+text-decoration-line: none;
+}
 
 .phoneNumberIcon {
     align-items: center;
@@ -242,6 +266,8 @@ white-space: nowrap;
     width: 588px;
     padding-top: 45px;
 }
+
+
 
 
 .secondSection {
@@ -593,7 +619,8 @@ gap: 16px;
 
 .third-section {
 
-width: 1280px;
+width: 100%;
+display: flex;
 height: 480px;
 font-size: 14px;
 background-color: #F7F5F3;
@@ -611,8 +638,9 @@ left: 40px;
 gap: 0px;
 justify-content: space-between;
 align-items: center;
+align-content: center;
 padding-left: 40px;
-padding-top: 40px;
+padding-top: 44px;
 
 
 }
@@ -698,7 +726,7 @@ border-color: #D1D5DB;
 
 .final-section {
 display: flex;
-width: 1280px;
+width: 100%;
 height: 204px;
 background-color: #1F1815;
 color: white;
