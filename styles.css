@@ -209,7 +209,7 @@ display: flex;
 
 }
 
-.descubrir-origenes {
+.firstHeroButton {
 
 width: 168px;
 height: 40px;
@@ -226,7 +226,7 @@ text-align: center;
 justify-content: center;
 }
 
-.comprar-cafe {
+.secondHeroButton {
 
 width: 168px;
 height: 40px;
@@ -398,11 +398,13 @@ line-height: 28px;
     gap: 8px;
 }
 
-.costaRicaCoffee:hover {
+.costaRicaCoffee:hover,
+.colombiaCoffee:hover,
+.laosCoffee:hover,
+.etiopiaCoffee:hover {
 
     border: 1px solid #E3DED7;
     background-color: #E3DED7;
-    cursor: pointer;
 }
 
 .costaRicaCoffee > a:hover,
@@ -411,6 +413,7 @@ line-height: 28px;
 .laosCoffee > a:hover {
 
 background-color: #2A5B45;
+cursor: pointer;
 }
 
 .colombiaCoffee {
@@ -437,13 +440,6 @@ background-color: #2A5B45;
     border-radius: 4px;
     padding: 8px;
     gap: 8px;
-}
-
-.colombiaCoffee:hover {
-
-    border: 1px solid #E3DED7;
-    background-color: #E3DED7;
-    cursor: pointer;
 }
 
 
@@ -473,12 +469,6 @@ background-color: #2A5B45;
     gap: 8px;
 }
 
-.laosCoffee:hover {
-
-    border: 1px solid #E3DED7;
-    background-color: #E3DED7;
-    cursor: pointer;
-}
 
 .etiopiaCoffee {
     width: 282px;
@@ -504,12 +494,6 @@ background-color: #2A5B45;
     border-radius: 4px;
     padding: 8px;
     gap: 8px;
-}
-
-.etiopiaCoffee:hover {
-
-    border: 1px solid #E3DED7;
-    background-color: #E3DED7;
 }
 
 #novedades > a {
@@ -575,7 +559,8 @@ gap: 16px;
     border-radius: 10px;
     background-color: #FFFFFF; 
     min-height: 72px; 
-    transition: all 1s;
+    overflow: hidden;
+    transition: transform 1s ease-in-out height 1s ease-in-out;
 }
 
 .faqsWrapperTitle{
@@ -592,10 +577,10 @@ gap: 16px;
 .faqsWrapperTitle img{
     height: 20px;
     width: 20px;
+    transition: transform 1s ease-in-out;
 }
 
 .faqsWrapperElements hr{
-    transition: all 1s;
     width: 620px;
     border: 1px solid #E3DED7;
     display: none; 
@@ -612,17 +597,22 @@ gap: 16px;
 
 .faqsWrapperElements:hover{
     padding: 24px;
+    height: auto;
+    overflow: visible;
 }
 
 .faqsWrapperElements:hover hr{
     display: block;
+    overflow: auto;
 }
 
 .faqsWrapperElements:hover p{
     display: block;
+    overflow: visible;
 }
 
-.faqsWrapperElements:hover .faqsWrapperTitle img{
+.faqsWrapperElements:hover 
+.faqsWrapperTitle img{
     transform: rotate(180deg);
 }
 
@@ -765,12 +755,18 @@ border: none;
 
 #area-texto {
  
-height: 178px;
-width: 520px;
-margin: 24px 0 0 0;
-padding: 8px 12px 8px 12px;
+display: flex;
+height: 142px;
+width: 100%;
+gap: 4px;
+padding: 8px;
 border-radius: 6px;
 border-color: #D1D5DB;
+}
+
+#area-texto:focus {
+
+    outline: 2px solid #3F8F6B;
 }
 
 #name,
@@ -786,13 +782,27 @@ outline: none;
 
 }
 
-#name,
+#phone {
+
+width: 402px;
+height: 34px;
+padding: 9px 13px 9px 13px;
+border-radius: 6px;
+border: 1px #D1D5DB solid;
+outline: none;
+
+
+}
+
+#name:focus,
+#phone:focus,
 #email:focus {
 
     outline: 2px solid #3F8F6B;
-    accent-color: #3F8F6B;
     
     }
+
+
 
 .checkboxForm {
     white-space: nowrap;
@@ -802,6 +812,22 @@ outline: none;
     width: 442px;
     height: 16px;
     align-items: center;
+    appearance: none;
+    outline: none;
+    accent-color: none;
+}
+
+.checkboxForm:checked {
+
+    background-color: #2A5B45;
+    accent-color: #2A5B45;
+  
+}
+
+.checkboxForm:checked::after {
+
+    background-color: #2A5B45;
+    accent-color: #2A5B45;
 }
 
 .formSelect {
@@ -812,8 +838,19 @@ padding: 9px 13px 9px 13px;
 gap: 4px;
 border-radius: 6px;
 box-shadow: 0px 1px 2px 0px #0000000D;
+border: 1px #D1D5DB solid;
+outline: none;
 
 }
+
+.formSelect:focus {
+
+    outline: 2px solid #2A5B45;
+    
+
+}
+
+
 
 input:not(checkbox)
 input {
@@ -896,6 +933,7 @@ input:focus {
         height: 40px;
         background: #515051;
         border-radius: 4px;
+        cursor: pointer;
         
     }
     
@@ -933,7 +971,7 @@ input:focus {
         gap: 8px;
     }
     
-    .FooterTerms {
+    .footerTerms {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
