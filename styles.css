@@ -721,7 +721,10 @@ background-color: white;
     background-color: #E3DED7;
     width: 588px;
     height: 320px;
-    gap: 32px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
@@ -729,11 +732,13 @@ background-color: white;
 
 white-space: nowrap;
 color: #111827;
+font-size: 18px, 600;
 }
 
 #contact > p {
 
     color: #6B7280;
+    line-height: 16px;
     }
 
 #contact, form {
@@ -787,6 +792,16 @@ outline: none;
     
     }
 
+.checkboxForm {
+    white-space: nowrap;
+    display: flex;
+    text-align: left;
+    gap: 12px;
+    width: 442px;
+    height: 16px;
+    align-items: center;
+}
+
 .formSelect {
 
 width: 68px;
@@ -798,7 +813,7 @@ box-shadow: 0px 1px 2px 0px #0000000D;
 
 }
 
-
+input:not(checkbox)
 input {
 
     width: 402px;
