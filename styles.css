@@ -372,6 +372,7 @@ line-height: 28px;
 
 }
 
+
 .costaRicaCoffee {
     width: 282px;
     height: 391.39px;
@@ -401,20 +402,33 @@ line-height: 28px;
 .costaRicaCoffee:hover,
 .colombiaCoffee:hover,
 .laosCoffee:hover,
-.etiopiaCoffee:hover {
+.etiopiaCoffee:hover
+.costaRicaCoffee:hover a,
+.colombiaCoffee:hover a,
+.etiopiaCoffee:hover a,
+.laosCoffee:hover a {
 
     border: 1px solid #E3DED7;
     background-color: #E3DED7;
+    background-color: #2A5B45;
 }
 
-.costaRicaCoffee > a:hover,
-.colombiaCoffee > a:hover,
-.etiopiaCoffee > a:hover,
-.laosCoffee > a:hover {
+.costaRicaCoffee:hover a,
+.colombiaCoffee:hover a,
+.etiopiaCoffee:hover a,
+.laosCoffee:hover a {
 
 background-color: #2A5B45;
 cursor: pointer;
 }
+
+.sectionNovedadesWrapper:hover a {
+
+    background-color: #2A5B45;
+    
+
+}
+
 
 .colombiaCoffee {
     width: 282px;
@@ -560,7 +574,7 @@ gap: 16px;
     background-color: #FFFFFF; 
     min-height: 72px; 
     overflow: hidden;
-    transition: transform 1s ease-in-out height 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .faqsWrapperTitle{
@@ -981,6 +995,10 @@ input:focus {
         width: 255.33px;
         height: 80px;
         left: 800px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+
 
     }
     
