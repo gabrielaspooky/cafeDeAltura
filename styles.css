@@ -740,8 +740,8 @@ color: #111827;
 }
 
 .enviar {
-    width: 90px;
-    padding: 12px;
+width: 90px;
+padding: 12px;
 height: 40px;
 background-color:#2A5B45;
 color: white;
@@ -783,6 +783,7 @@ submit {
 
 input:focus {
     outline: 2px solid #3F8F6B;
+    accent-color: #3F8F6B;
 
 }
 
