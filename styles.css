@@ -744,6 +744,8 @@ font-size: 18px, 600;
 #contact, form {
     flex: 1; 
     margin: 0 10px; 
+    display: flex;
+    flex-direction: column;
 
 }
 
