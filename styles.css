@@ -303,7 +303,6 @@ gap: 16px;
 
     background-color: white;
     border-radius: 8px;
-    padding: 24px;
     height: 232px;
     width: 316px;
     font-size: 14px;
@@ -312,8 +311,9 @@ gap: 16px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    /* align-content: center; */
     text-align: center;
+  
 
 
 }
@@ -321,18 +321,16 @@ gap: 16px;
 .benefitBoxes > p  {
 
 width: 268px;
-height: 32px;
-line-height: 16px;
+/* height: 32px; */
+/* line-height: 16px; */
 }
 
 .benefitBoxes > img {
 
     width: 64px;
-    height: 70px;
-    padding: 12px 0px 0px 0px;
-    gap: 8px;
-    border-radius: 20px 0px 0px 0px;
-    opacity: 0px;
+    height: 64px;
+    /* padding: 12px 0px 0px 0px; */
+    /* border-radius: 20px 0px 0px 0px; */
     
 }
 
@@ -340,8 +338,8 @@ line-height: 16px;
 
     white-space: nowrap;
     width: 268px;
-height: 24px;
-line-height: 24px;
+/* height: 24px; */
+/* line-height: 24px; */
 
 }
 
@@ -372,6 +370,41 @@ line-height: 28px;
 
 }
 
+.productCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.textProductContainer {
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: red solid 2px;
+}
+
+.textProductContainer h3 {
+
+    width: 119px;
+height: 44px;
+gap: 12px;
+border: #2A5B45 solid 2px;
+white-space: nowrap;
+display: flex;
+
+}
+
+.textProductContainer p {
+
+    width: 119px;
+height: 44px;
+gap: 12px;
+border: #2A5B45 solid 2px;
+
+}
 
 .costaRicaCoffee {
     width: 282px;
@@ -410,7 +443,7 @@ line-height: 28px;
 
     border: 1px solid #E3DED7;
     background-color: #E3DED7;
-    background-color: #2A5B45;
+
 }
 
 .costaRicaCoffee:hover a,
@@ -561,6 +594,7 @@ gap: 16px;
     justify-content: center;
     gap: 16px;
     cursor: pointer;
+    border: black 2px solid;
 }
 
 .faqsWrapperElements{
@@ -572,8 +606,8 @@ gap: 16px;
     gap: 16px;
     border-radius: 10px;
     background-color: #FFFFFF; 
-    min-height: 72px; 
-    overflow: hidden;
+    height: 72px; 
+    overflow: ;
     transition: transform 1s ease-in-out;
 }
 
@@ -828,10 +862,10 @@ outline: none;
     align-items: center;
     appearance: none;
     outline: none;
-    accent-color: none;
+    accent-color:  #2A5B45;
 }
 
-.checkboxForm:checked {
+/* .checkboxForm:checked {
 
     background-color: #2A5B45;
     accent-color: #2A5B45;
@@ -842,7 +876,7 @@ outline: none;
 
     background-color: #2A5B45;
     accent-color: #2A5B45;
-}
+} */
 
 .formSelect {
 
