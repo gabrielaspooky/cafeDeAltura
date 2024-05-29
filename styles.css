@@ -699,7 +699,7 @@ font-weight: 500;
 display: flex;
 flex-direction: column;
 height: 200px;
-weight: 600px;
+font-weight: 600px;
 gap: 24px;
 opacity: 0px;
 padding: 40px 40px 40px 40px;
@@ -713,7 +713,7 @@ background-color: white;
 #contact {
 
     height: 400px;
-    weight: 600px;
+    font-weight: 600px;
     padding: 40px 32px 40px 32px;
     background-color: #E3DED7;
     width: 588px;
@@ -754,6 +754,7 @@ border: none;
 }
 
 #area-texto {
+ 
 height: 178px;
 width: 520px;
 margin: 24px 0 0 0;
@@ -763,8 +764,7 @@ border-color: #D1D5DB;
 }
 
 #name,
-#email,
-#telefono {
+#email {
 
 width: 470px;
 height: 34px;
@@ -776,9 +776,34 @@ outline: none;
 
 }
 
-submit {
+#name,
+#email:focus {
 
-    background-color: #6B7280;
+    outline: 2px solid #3F8F6B;
+    accent-color: #3F8F6B;
+    
+    }
+
+.formSelect {
+
+width: 68px;
+height: 38px;
+padding: 9px 13px 9px 13px;
+gap: 4px;
+border-radius: 6px;
+box-shadow: 0px 1px 2px 0px #0000000D;
+
+}
+
+
+input {
+
+    width: 402px;
+    height: 34px;
+    padding: 9px 13px 9px 13px;
+    border-radius: 6px;
+    border: 1px #D1D5DB solid;
+    outline: none;
 }
 
 input:focus {
@@ -787,6 +812,7 @@ input:focus {
 
 }
 
+/* Contenido de pie de página */
 
     footer {
         display: flex;

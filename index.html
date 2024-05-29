@@ -306,15 +306,19 @@
                 <input type="mail" id="email" name="Mail">
         
                 
-                <label for="telefono">
-                Teléfono
-                </label>
-        
-                <input type="select" id="telefono" name="Telefono" placeholder="+1 (555) 987-6543" id="select">
+                <label for="phoneCode">Teléfono</label>
+                <div class="phoneBox">
+                    <select id="phoneCode" class="formSelect" aria-label="Default select example">
+                        <option selected>US</option>
+                        <option value="ESP">ES</option>
+                        <option value="VEN">VEN</option>
+                    </select>
+                    <input type="text" id="phoneForm" placeholder="+1 (555) 987-6543">
+                </div>
       
-        
-            
-                <textarea id="area-texto" name="area-texto" placeholder="¿En qué podemos ayudarte?"></textarea>
+                <textarea id="area-texto" name="area-texto" placeholder="¿En qué podemos ayudarte?">
+              
+                </textarea>
         
                 <input type="checkbox" id="politica-privacidad" name="terminos" value="politica-privacidad">
                 <label for="politica-privacidad">
@@ -328,7 +332,7 @@
         
         </section>
 
-      <footer class="finalSection">
+<footer class="finalSection">
         <div class="footerWrapper">
             <div class="containr logo">
                 <p>cafedealtura.com</p>
