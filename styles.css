@@ -347,8 +347,8 @@ line-height: 24px;
 
 #novedades {
     width: 100%;
-    height: 550px;
-    padding: 40px;
+    height: 603.39px;
+    padding: 40px 40px 40px 70px;
     gap: 40px;
 
 }
@@ -356,6 +356,10 @@ line-height: 24px;
 #novedades > h3 {
 color: #2a5b45;
 text-align: center;
+font-size: 24px;
+font-weight: 500;
+line-height: 28px;
+
 }
 
 .sectionNovedadesWrapper {
@@ -364,6 +368,7 @@ text-align: center;
     height: 391.39px;
     align-items: center;
     justify-content: space-between;
+    align-content: center;
 
 }
 
@@ -505,7 +510,6 @@ background-color: #2A5B45;
 
     border: 1px solid #E3DED7;
     background-color: #E3DED7;
-    cursor: pointer;
 }
 
 #novedades > a {
@@ -517,7 +521,6 @@ font-size: 14px;
 font-weight: 600;
 align-items: center;
 gap: 16px;
-
 }
 
 
