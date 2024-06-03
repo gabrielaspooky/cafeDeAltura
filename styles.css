@@ -321,10 +321,18 @@ width: 268px;
 
 }
 
-.benefitBoxes > img {
-
+.benefitIcon {
     width: 64px;
-    height: 64px;
+height: 64px;
+padding: 12px;
+gap: 8px;
+border-radius: 20px;
+background-color: #2A5B45;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
 }
 
 .benefitBoxes > h3 {
@@ -380,7 +388,7 @@ gap: 12px;
     display: flex;
     width: 60px;
     height: 32px;
-    padding: 8px 0px 0px 0px;
+    padding: 8px;
     border-radius: 4px;
     background-color: #2A5B45B2;
     color: white;
@@ -389,20 +397,15 @@ gap: 12px;
     font-size: 14px;
 }
 
-.productCard,
-.addButton {
-    transition: background-color 0.3s ease;
-    
-}
-
-.addButton:hover {
-    background-color: #2A5B45;
-}
 
 .productCard:hover {
     background-color: #F7F5F3;
 }
 
+.productCard:hover a{
+    background-color: #2A5B45;
+    
+}
 .textProductContainer {
 
     display: flex;
@@ -502,7 +505,6 @@ gap: 16px;
     border-radius: 10px;
     background-color: #FFFFFF; 
     height: 72px; 
-    overflow: ;
     transition: transform 1s ease-in-out;
 }
 
@@ -667,10 +669,9 @@ flex-direction: column;
 .form-box {
 display: flex;
 flex-direction: column;
-height: 200px;
 font-weight: 600px;
 gap: 24px;
-padding: 40px 40px 40px 40px;
+padding: 32px 48px 32px 48px;
 width: 588px;
 height: 552px;
 background-color: white;
@@ -685,7 +686,6 @@ background-color: white;
     padding: 40px 32px 40px 32px;
     background-color: #E3DED7;
     width: 588px;
-    height: 320px;
     gap: 12px;
     display: flex;
     flex-direction: column;
@@ -707,10 +707,16 @@ font-size: 18px, 600;
     }
 
 #contact, form {
-    flex: 1; 
     margin: 0 10px; 
     display: flex;
     flex-direction: column;
+
+}
+
+form {
+    
+    gap: 24px;
+    display: flex;
 
 }
 
@@ -835,7 +841,8 @@ border: none;
     align-items: center;
     appearance: none;
     outline: none;
-    accent-color:  #2A5B45;
+    accent-color:#2A5B45;
+
 }
 
 .formSelect {
@@ -846,15 +853,16 @@ padding: 9px 13px 9px 13px;
 border-radius: 6px;
 border: none;
 outline: none;
+cursor: pointer;
 
 }
 
-.formSelect:focus {
+/* .formSelect:focus {
 
     outline: 2px solid #3F8F6B;
     
 
-}
+} */
 
 input:not(checkbox)
 input {
@@ -927,6 +935,7 @@ input:focus {
         left: 0px;
         top: 0px;
         color: #fff;
+        text-decoration: none;
     }
     
     .mailAndPhone {
@@ -940,6 +949,7 @@ input:focus {
         background: #515051;
         border-radius: 4px;
         cursor: pointer;
+        text-decoration: none;
         
     }
     
@@ -1004,6 +1014,7 @@ input:focus {
         color: #fff;
         text-decoration: none;
         gap: 8px;
+    
     }
     
     .copyrighFooter {
