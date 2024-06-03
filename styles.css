@@ -630,6 +630,39 @@ font-weight: 500;
 
 }
 
+.mailPhoneIcons {
+    display: flex;
+    width: 588px;
+height: 60px;
+gap: 12px;
+flex-direction: column;
+
+}
+
+.phoneInfo {
+    flex-direction: row;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: #6B7280;
+    
+}
+
+.mailInfo {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #6B7280;
+}
+
+.phoneIcon,
+.mailIcon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+}
 
 .form-box {
 display: flex;
@@ -835,7 +868,6 @@ input {
 }
 
 input:focus {
-    outline: 2px solid #3F8F6B;
     accent-color: #3F8F6B;
 
 }
