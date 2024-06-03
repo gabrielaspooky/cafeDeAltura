@@ -311,35 +311,26 @@ gap: 16px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* align-content: center; */
     text-align: center;
   
-
-
 }
 
 .benefitBoxes > p  {
 
 width: 268px;
-/* height: 32px; */
-/* line-height: 16px; */
+
 }
 
 .benefitBoxes > img {
 
     width: 64px;
     height: 64px;
-    /* padding: 12px 0px 0px 0px; */
-    /* border-radius: 20px 0px 0px 0px; */
-    
 }
 
 .benefitBoxes > h3 {
 
     white-space: nowrap;
     width: 268px;
-/* height: 24px; */
-/* line-height: 24px; */
 
 }
 
@@ -384,6 +375,34 @@ gap: 12px;
 
 }
 
+.addButton {
+
+    display: flex;
+    width: 60px;
+    height: 32px;
+    padding: 8px 0px 0px 0px;
+    border-radius: 4px;
+    background-color: #2A5B45B2;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.productCard,
+.addButton {
+    transition: background-color 0.3s ease;
+    
+}
+
+.addButton:hover {
+    background-color: #2A5B45;
+}
+
+.productCard:hover {
+    background-color: #F7F5F3;
+}
+
 .textProductContainer {
 
     display: flex;
@@ -419,19 +438,6 @@ align-items: center;
 font-size: 14px;
 }
 
-.addButton {
-
-    display: flex;
-    width: 60px;
-    height: 32px;
-    padding: 8px 0px 0px 0px;
-    border-radius: 4px;
-    background-color: #2A5B45B2;
-    color: white;
-    text-decoration: none;
-    justify-content: center;
-    font-size: 14px;
-}
 
 #novedades > a {
     display: flex;
@@ -631,7 +637,6 @@ flex-direction: column;
 height: 200px;
 font-weight: 600px;
 gap: 24px;
-opacity: 0px;
 padding: 40px 40px 40px 40px;
 width: 588px;
 height: 552px;
@@ -676,6 +681,15 @@ font-size: 18px, 600;
 
 }
 
+.nameForm {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+height: 54px;
+gap: 4px;
+
+}
+
 .enviar {
 width: 90px;
 padding: 12px;
@@ -688,6 +702,16 @@ font-weight: 600;
 align-items: center;
 cursor: pointer;
 border: none;
+}
+
+.textAreaForm {
+
+    width: 470px;
+height: 142px;
+gap: 4px;
+display: flex;
+flex-direction: column;
+
 }
 
 #area-texto {
@@ -719,19 +743,46 @@ outline: none;
 
 }
 
+.emailForm {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.phoneForm {
+
+    width: 470px;
+    height: 58px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+}
+.phoneBox {
+
+width: 470px;
+height: 38px;
+border-radius: 6px;
+display: flex;
+border: 1px #D1D5DB solid;
+
+}
+
 #phone {
 
-width: 402px;
-height: 34px;
+display: flex;
+width: 470px;
+height: 35px;
 padding: 9px 13px 9px 13px;
 border-radius: 6px;
-border: 1px #D1D5DB solid;
 outline: none;
-
+border: none;
 
 }
 
 #name:focus,
+.phoneBox:focus,
+.phoneForm:focus,
 #phone:focus,
 #email:focus {
 
@@ -757,19 +808,17 @@ outline: none;
 .formSelect {
 
 width: 68px;
-height: 38px;
+height: 34px;
 padding: 9px 13px 9px 13px;
-gap: 4px;
 border-radius: 6px;
-box-shadow: 0px 1px 2px 0px #0000000D;
-border: 1px #D1D5DB solid;
+border: none;
 outline: none;
 
 }
 
 .formSelect:focus {
 
-    outline: 2px solid #2A5B45;
+    outline: 2px solid #3F8F6B;
     
 
 }

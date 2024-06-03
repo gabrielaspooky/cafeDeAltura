@@ -286,19 +286,22 @@
         
             <form>
         <div class="form-box">
+            
+            <div class="nameForm">
                 <label for="name">
                     Nombre completo
                 </label>
                 <input type="text" id="name" name="Nombre">
+            </div>
         
-        
+            <div class="emailForm">
                 <label for="email">
                     Email
                 </label>
-      
-                <input type="mail" id="email" name="Mail">
-        
+            <input type="mail" id="email" name="Mail">
+            </div>
                 
+            <div class="phoneForm">
                 <label for="phoneCode">Teléfono</label>
                 <div class="phoneBox">
                     <select id="phoneCode" class="formSelect" aria-label="Default select example">
@@ -308,8 +311,17 @@
                     </select>
                     <input type="text" id="phone" placeholder="+1 (555) 987-6543">
                 </div>
+        
+<br>
+<br>
+            <div class="textAreaForm">
       
                 <textarea placeholder="¿En qué podemos ayudarte?" id="area-texto" name="area-texto"></textarea>
+
+            </div>
+
+            <br>
+        
 
                 <div class="checkboxForm">
         
@@ -319,6 +331,8 @@
                 </label>
 
               </div>
+
+              <br>
                 
                <input type="submit" value="Enviar" class="enviar">
         
