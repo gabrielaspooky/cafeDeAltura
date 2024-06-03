@@ -375,172 +375,62 @@ line-height: 28px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    width: 282px;
+height: 391.39px;
+padding: 24px 0px 0px 0px;
+border-radius: 8px;
+border: 1px solid #E3DED7;
+gap: 12px;
+
 }
 
 .textProductContainer {
 
     display: flex;
     flex-direction: column;
+    line-height: 16px;
+    width: 147px;
+    height: 44px;
+    align-items: center;
     gap: 12px;
-    border: red solid 2px;
+
 }
 
 .textProductContainer h3 {
 
-    width: 119px;
+width: 119px;
 height: 44px;
-gap: 12px;
-border: #2A5B45 solid 2px;
+font-weight: 600;
+font-size: 14px;
 white-space: nowrap;
 display: flex;
+flex-direction: column;
+align-items: center;
 
 }
 
 .textProductContainer p {
 
-    width: 119px;
+width: 119px;
 height: 44px;
-gap: 12px;
-border: #2A5B45 solid 2px;
-
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 14px;
 }
 
-.costaRicaCoffee {
-    width: 282px;
-    height: 391.39px;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #E3DED7;
-    border-radius: 8px;
-}
+.addButton {
 
-.costaRicaCoffee > img {
-    padding: 24px;
-}
-
-.costaRicaCoffee > a {
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    background-color: #2A5B45B2;
+    display: flex;
     width: 60px;
     height: 32px;
+    padding: 8px 0px 0px 0px;
     border-radius: 4px;
-    padding: 8px;
-    gap: 8px;
-}
-
-.costaRicaCoffee:hover,
-.colombiaCoffee:hover,
-.laosCoffee:hover,
-.etiopiaCoffee:hover
-.costaRicaCoffee:hover a,
-.colombiaCoffee:hover a,
-.etiopiaCoffee:hover a,
-.laosCoffee:hover a {
-
-    border: 1px solid #E3DED7;
-    background-color: #E3DED7;
-
-}
-
-.costaRicaCoffee:hover a,
-.colombiaCoffee:hover a,
-.etiopiaCoffee:hover a,
-.laosCoffee:hover a {
-
-background-color: #2A5B45;
-cursor: pointer;
-}
-
-.sectionNovedadesWrapper:hover a {
-
-    background-color: #2A5B45;
-    
-
-}
-
-
-.colombiaCoffee {
-    width: 282px;
-    height: 391.39px;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #E3DED7;
-    border-radius: 8px;
-}
-
-.colombiaCoffee > img {
-    padding: 24px;
-}
-
-.colombiaCoffee > a {
-    cursor: pointer;
     background-color: #2A5B45B2;
     color: white;
     text-decoration: none;
+    justify-content: center;
     font-size: 14px;
-    width: 60px;
-    height: 32px;
-    border-radius: 4px;
-    padding: 8px;
-    gap: 8px;
-}
-
-
-.laosCoffee {
-    width: 282px;
-    height: 391.39px;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #E3DED7;
-    border-radius: 8px;
-}
-
-.laosCoffee > img {
-    padding: 24px;
-}
-
-.laosCoffee > a {
-    cursor: pointer;
-    background-color: #2A5B45B2;
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-    width: 60px;
-    height: 32px;
-    border-radius: 4px;
-    padding: 8px;
-    gap: 8px;
-}
-
-
-.etiopiaCoffee {
-    width: 282px;
-    height: 391.39px;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #E3DED7;
-    border-radius: 8px;
-}
-
-.etiopiaCoffee > img {
-    padding: 24px;
-}
-
-.etiopiaCoffee > a {
-    cursor: pointer;
-    background-color: #2A5B45B2;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    width: 60px;
-    height: 32px;
-    border-radius: 4px;
-    padding: 8px;
-    gap: 8px;
 }
 
 #novedades > a {
@@ -594,7 +484,6 @@ gap: 16px;
     justify-content: center;
     gap: 16px;
     cursor: pointer;
-    border: black 2px solid;
 }
 
 .faqsWrapperElements{
@@ -865,19 +754,6 @@ outline: none;
     accent-color:  #2A5B45;
 }
 
-/* .checkboxForm:checked {
-
-    background-color: #2A5B45;
-    accent-color: #2A5B45;
-  
-}
-
-.checkboxForm:checked::after {
-
-    background-color: #2A5B45;
-    accent-color: #2A5B45;
-} */
-
 .formSelect {
 
 width: 68px;
@@ -897,8 +773,6 @@ outline: none;
     
 
 }
-
-
 
 input:not(checkbox)
 input {
@@ -925,6 +799,7 @@ input:focus {
         height: 270px;
         background: #1F1815;
         justify-content: space-between;
+        text-decoration: none;
     
     }
     
@@ -939,6 +814,7 @@ input:focus {
         height: 204px;
         left: 40px;
         top: 28.61px;
+        text-decoration: none;
     }
     
     .logo {
@@ -955,6 +831,7 @@ input:focus {
         display: flex;
         width: 1132px;
         height: 152px;
+        text-decoration: none;
     }
     
     .contactWrapper {
@@ -1007,6 +884,7 @@ input:focus {
         width: 96px;
         height: 144px;
         left: 577px;
+        text-decoration: none;
     }
     
     .menuFooter a {
@@ -1032,6 +910,7 @@ input:focus {
         font-weight: 600;
         font-size: 14px;
         line-height: 16px;
+        text-decoration: none;
 
 
     }
