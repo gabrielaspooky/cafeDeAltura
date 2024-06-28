@@ -1,4 +1,3 @@
-
 import Colombia from "./assets/Coffee_bag_Colombia.png";
 import CostaRica from "./assets/Coffee_bag_Costa_Rica.png";
 import Laos from "./assets/Coffee_bag_Laos.png";
