@@ -13,7 +13,7 @@ export const coffeeData = [
     "productName": "Costa Rica Tarrazú",
     "isAvailable": true,
     "coffeePrice": 9,
-    "img": ""
+    "img": "../assets/Coffee_bag_Costa_Rica.png"
     },
 
 
@@ -81,3 +81,11 @@ export const coffeeData = [
 ]
     // console.log(coffeeData);
                         
+    
+    localStorage.setItem("dataStorage",JSON.stringify(coffeeData));
+    const coffeeDataJson = JSON.parse(localStorage.getItem("dataStorage"));
+
+    sessionStorage.setItem("dataSessionStorage",JSON.stringify(coffeeData));
+    const coffeeDataJsonSession = JSON.parse(sessionStorage.getItem("dataStorage"));
+ 
+console.log(coffeeDataJson);

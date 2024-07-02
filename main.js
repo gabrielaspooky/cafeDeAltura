@@ -1,6 +1,6 @@
 import { coffeeData } from "./data.js";
 
-console.log(coffeeData);
+// console.log(coffeeData);
 
 // const coffeeContent = document.body.appendChild(document.getElementsByClassName(".productCardList"));
 
