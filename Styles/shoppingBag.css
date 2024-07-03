@@ -1,0 +1,70 @@
+section {
+    display: flex;
+    margin: 64px;
+}
+
+.bagCounter {
+
+    color: #2a5b45;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.handleProductsContainer {
+
+    border: solid 2px black;
+    width: 1,200px;
+    height: 415,32px;
+}
+
+.itemsList {
+
+    width: 776px;
+    height: 55,66;
+    display: flex;
+    gap: 24px;
+}
+
+.totalBagContainer {
+    width: 384px;
+    height: 280px;
+    padding: 24px;
+    gap: 16px;
+    display: flex;
+    border: 2px solid black;
+}
+
+.checkoutButtonsContainer {
+
+width: 310px;
+height: 40px;
+gap: 16px;
+display: flex;
+
+}
+
+.itemTaxInfo {
+    font-size: 12px;
+    align-items: flex-end;
+    display: flex;
+    color: #515051;
+}
+
+.checkoutButtonsContainer > button {
+  
+    display: flex;
+    width: 129px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #2a5b45;
+    padding: 12px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    
+}

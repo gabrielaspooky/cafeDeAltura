@@ -85,7 +85,11 @@ export const coffeeData = [
     localStorage.setItem("dataStorage",JSON.stringify(coffeeData));
     const coffeeDataJson = JSON.parse(localStorage.getItem("dataStorage"));
 
-    sessionStorage.setItem("dataSessionStorage",JSON.stringify(coffeeData));
-    const coffeeDataJsonSession = JSON.parse(sessionStorage.getItem("dataStorage"));
+    // sessionStorage.setItem("dataSessionStorage",JSON.stringify(coffeeData));
+    // const coffeeDataJsonSession = JSON.parse(sessionStorage.getItem("dataStorage"));
  
 console.log(coffeeDataJson);
+
+const localStorageKey = localStorage.key(0);
+
+console.log(localStorageKey);
