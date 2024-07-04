@@ -1041,8 +1041,23 @@ input:focus {
     /* nuevos componentes */
 
     #cartDrawer {
-
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: white;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+        visibility: hidden; /* Estado por defecto es oculto */
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s, transform 0.5s;
+        transform: translateX(100%); /* Inicialmente fuera de la vista */
         width: 184px;
         height: 300px;
-        background-color: white;
     }
+    
+    #cartDrawer.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0); /* Dentro de la vista */
+    }
+    
+    

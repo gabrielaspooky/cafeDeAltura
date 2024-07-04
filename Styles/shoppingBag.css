@@ -10,11 +10,13 @@ section {
     font-size: 24px;
     font-weight: 500;
     line-height: 28px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
 }
 
 .handleProductsContainer {
 
-    border: solid 2px black;
     width: 1,200px;
     height: 415,32px;
 }
@@ -33,7 +35,6 @@ section {
     padding: 24px;
     gap: 16px;
     display: flex;
-    border: 2px solid black;
 }
 
 .checkoutButtonsContainer {
