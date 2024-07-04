@@ -1,45 +1,25 @@
 import { coffeeData } from "./data.js";
 
-const selectedProducts = [];
+// función para generar dynamic cards 
 
-selectedProducts.forEach((result) => {
+const container = document.getElementsByClassName("sectionNovedadesWrapper")[0]; 
 
-const coffeeCard = document.createElement("div");
-coffeeCard.classList = "card-body"
+    coffeeData.forEach((product) => {
+        const coffeeCard = document.createElement("div");
+        coffeeCard.classList.add("productCard");
 
-const content = `
- <div class="productCard">
-                    
-<img src="${result.img}">
-                    
-<div class="textProductContainer">
+        const content = `
+            <img src="${product.img}" alt="Imagen de ${product.productName}">
+            <div class="textProductContainer">
+                <h3>${product.productName}</h3>
+                <p>${product.coffeePrice}€</p>
+            </div>
+            <a href="" class="addButton">Añadir</a>
+        `;
 
-<h3>${result.productName}</h3>
-
-<p>${result.productPrice}</p>
-
-</div>
-                    
-<a href="" class="addButton">Añadir</a>
-
-</div>
-`;
-selectedProducts.innerHTML += content;
-});
-// const coffeeImg = document.createElement("img")
-// coffeeImg.src = coffeeData[1].img
-// document.querySelector("body").appendChild(coffeeImg);
-
-// document.getElementsByClassName("addButton").addEventListener("cli")
-
-// addButton.addEventListener("click", () => {
-//     divConteinArraySelectedProducts.innerHTML = "";
-//   });
-
-// const cardList = 
-//   selectedProducts.map() => {
-// coffeeContent.innerHTML += ``
-// }
+        coffeeCard.innerHTML = content;
+        container.appendChild(coffeeCard);
+    });
 
 // Componente de carrito 
 
@@ -48,14 +28,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const cartDrawerComponent = document.createElement("div");
     cartDrawerComponent.setAttribute("id", "cartDrawer");
     cartDrawerComponent.innerHTML = `
-        <h2>Tu Carrito</h2>
-        <!-- Aquí puedes agregar el contenido de tu carrito -->
-        <p>Producto 1</p>
-        <p>Producto 2</p>
-        <p>Producto 3</p>
+        <h2>Mi cesta</h2>
+        <p>Café 1</p>
+        <p>Café 2</p>
+        <p>Café 3</p>
         <button id="closeCart">Cerrar</button>
+        <button  id="goToCheckout">
+        <a href="./checkout.html">
+        Checkout
+        </a>
+        <button>
     `;
-    document.body.appendChild(cartDrawerComponent); // Asegúrate de agregar el cartDrawerComponent al documento
+    document.body.appendChild(cartDrawerComponent); 
 
     const shoppingBagButtons = document.getElementsByClassName("shoppingBagIcon");
 
@@ -65,33 +49,41 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
-    // Agregar funcionalidad para cerrar el carrito
+    // funcionalidad para cerrar el carrito
     const closeCartButton = document.getElementById('closeCart');
     closeCartButton.addEventListener('click', () => {
         cartDrawerComponent.classList.remove('open'); // Ocultar el carrito
     });
 });
-// función para generar dynamic cards 
+
+
+// funcionalidad para añadir productos al carrito
+
+const addNewProductButtons = document.getElementsByClassName("addButton");
+const cartDrawerComponent = document.getElementById('cartDrawer'); 
+
+
+
 
 // función de salto de modal
 
- // Obtener el modal
+
  const modal = document.getElementById("myModal");
 
- // Obtener el botón de cierre
+ 
  const span = document.getElementsByClassName("close")[0];
 
- // Mostrar el modal después de 5 segundos
+
  setTimeout(() => {
      modal.style.display = "flex";
  }, 5000);
 
- // Cuando el usuario hace clic en (x), cerrar el modal
+
  span.onclick = function() {
      modal.style.display = "none";
  }
 
- // Cuando el usuario hace clic fuera del modal, cerrarlo
+
  window.onclick = function(event) {
      if (event.target == modal) {
          modal.style.display = "none";
