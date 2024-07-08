@@ -1,5 +1,8 @@
 import { coffeeData } from "./data.js";
 
+let coffeeItemsArrayHome = [];
+let coffeeItemsArrayShop = [];
+
 // función para generar dynamic cards 
 
 const container = document.getElementsByClassName("sectionNovedadesWrapper")[0]; 
@@ -56,15 +59,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
-
-// funcionalidad para añadir productos al carrito
-
-const addNewProductButtons = document.getElementsByClassName("addButton");
-const cartDrawerComponent = document.getElementById('cartDrawer'); 
-
-
-
-
 // función de salto de modal
 
 
@@ -89,3 +83,17 @@ const cartDrawerComponent = document.getElementById('cartDrawer');
          modal.style.display = "none";
      }
  }
+
+
+//  Crea dos arrays vacíos.
+//  Luego crea el condicional para validar el contenido del localStorage. Una vez con el valor del array, crea el forEach para recorrer el array.
+//  Hacer esto en la página principal y en la página de products.
+//  You
+//  8:12 PM
+//  Condicional dentro del forEach con array.lenght
+
+
+
+
+
+
